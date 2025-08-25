@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Chonburi&display=swap);
+
+.haus-frame {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1.8px;
+    background: linear-gradient(0deg, rgba(138, 138, 138, 1) 25%, rgba(255, 255, 255, 0) 70%);
+}
+.haus-box {
+    width: 100%;
+    aspect-ratio: 1.65 / 1;
+    background: var(--hauspic);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1.6fr auto 1fr 2.4vw;
+    align-content: start;
+}
+.haus-grad-t {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 80%);
+    grid-area: 1 / 1 / 3 / 2;
+}
+.haus-logo {
+    width: 40%;
+    aspect-ratio: 5.714 / 1;
+    background: url(https://iili.io/KJguNUl.png) center / 120%;
+    margin: 1.65vw auto 0vw;
+    grid-area: 1 / 1;
+}
+.haus-nav {
+    width: 85%;
+    margin: 0.25vw auto;
+    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+    gap: 0.65vw 1.25vw;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.haus-topic {
+    width: fit-content;
+    font: 1.1vw 'Bai Jamjuree';
+    color: #fff;
+    text-shadow: 1px 0px 10px rgba(0, 0, 0, 0.6);
+    align-self: flex-start;
+}
+.haus-grad-b {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 25%, rgba(255, 255, 255, 0) 85%);
+    grid-area: 3 / 1 / 6 / 2;
+}
+.haus-title {
+    width: fit-content;
+    max-width: 80%;
+    margin: auto;
+    font: 3.5vw 'Chonburi';
+    color: #fff;
+    text-shadow: 1px 0px 10px rgba(255, 255, 255, 0.69);
+    grid-area: 3 / 1 / 4 / 2;
+    line-height: 1;
+    text-align: center;
+}
+.haus-desc {
+    width: 55%;
+    height: 75%;
+    box-sizing: border-box;
+    padding: 0.65vw 0vw 1.2vw;
+    grid-area: 4 / 1 / 5 / 2;
+    margin: auto;
+    overflow-y: scroll;
+    font: 1vw 'Bai Jamjuree';
+    color: #fff;
+    line-height: 1.5;
+    text-indent: 8%;
+}
+.haus-desc::-webkit-scrollbar {
+    display: none;
+}
