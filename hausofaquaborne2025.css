@@ -4,7 +4,7 @@
     width: 100%;
     box-sizing: border-box;
     padding: 1.8px;
-    background: linear-gradient(0deg, rgba(77, 77, 77, 1) 25%, rgba(255, 255, 255, 0) 70%);
+    background: linear-gradient(0deg, rgba(43, 43, 43, 1) 25%, rgba(255, 255, 255, 0) 70%);
 }
 .haus-box {
     width: 100%;
@@ -80,4 +80,5 @@
     display: none;
 
 }
+
 
